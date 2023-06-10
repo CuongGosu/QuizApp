@@ -2,7 +2,7 @@ import { useState, useEffect, useReducer } from 'react';
 import useAxios from '../hooks/useAxios.js';
 import { CircularProgress } from '@mui/material';
 import '../styles/Quiz.scss';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 import quizReducer from '../Redux/reducers/quizReducer';
 import { nextQuestion, incrementScore } from '../Redux/actions/actions.js';
@@ -11,6 +11,7 @@ import {
   faCircle,
   faCircleCheck,
   faCircleXmark,
+  faHouse,
 } from '@fortawesome/free-solid-svg-icons';
 
 const Quiz = () => {
@@ -111,8 +112,19 @@ const Quiz = () => {
       });
     }
   };
+  const handleBackHome = () => {
+    console.log('.');
+    navigate('/');
+  };
   return (
     <div className='container'>
+      <div className='btn-home' to={'main'}>
+        <FontAwesomeIcon
+          onClick={handleBackHome}
+          className='icon-home'
+          icon={faHouse}
+        />
+      </div>
       <h1 className='title-question'>
         Question {state.currentQuestionIndex + 1}/
         <span className='number-question'>{response.results.length}</span>
