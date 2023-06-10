@@ -61,35 +61,39 @@ const Quiz = () => {
   if (loading) {
     return <CircularProgress />;
   }
-
   const handleSelect = (e) => {
-    const textElement = e.target.querySelector('.text-option');
-    const question = response.results[state.currentQuestionIndex];
-    setQuestionsReview((prevQuestions) => [
-      ...prevQuestions,
-      { questions: question.question, options },
-    ]);
-    if (textElement) {
-      const SelectAnswer =
-        textElement.textContent ===
-        response.results[state.currentQuestionIndex].correct_answer;
+    if (selectedAnswer == null) {
+      const textElement = e.target.querySelector('.text-option');
+      const question = response.results[state.currentQuestionIndex];
+      setQuestionsReview((prevQuestions) => [
+        ...prevQuestions,
+        { questions: question.question, options },
+      ]);
+      if (textElement) {
+        const SelectAnswer =
+          textElement.textContent ===
+          response.results[state.currentQuestionIndex].correct_answer;
 
-      setAnswerReview((prevAnswer) => [...prevAnswer, textElement.textContent]);
-      setSelectedAnswer(textElement.textContent);
-      if (SelectAnswer) {
-        dispatch(incrementScore());
-      } else {
-        textElement.parentElement.classList.add('correct');
-      }
-      setShowCorrectAnswer(true);
-      setChecked(true);
-      if (state.currentQuestionIndex + 1 === response.results.length) {
-        const endTime = new Date().getTime();
-        const elapsedTimeInSeconds = Math.floor((endTime - startTime) / 1000);
-        setElapsedTime(elapsedTimeInSeconds);
+        setAnswerReview((prevAnswer) => [
+          ...prevAnswer,
+          textElement.textContent,
+        ]);
+        setSelectedAnswer(textElement.textContent);
+        if (SelectAnswer) {
+          dispatch(incrementScore());
+        } else {
+          textElement.parentElement.classList.add('correct');
+        }
+        setShowCorrectAnswer(true);
+        setChecked(true);
+        if (state.currentQuestionIndex + 1 === response.results.length) {
+          const endTime = new Date().getTime();
+          const elapsedTimeInSeconds = Math.floor((endTime - startTime) / 1000);
+          setElapsedTime(elapsedTimeInSeconds);
+        }
       }
     } else {
-      console.log('?');
+      console.log('none');
     }
   };
 
