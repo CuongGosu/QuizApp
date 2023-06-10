@@ -1,8 +1,18 @@
 @import '../styles/variables.scss';
 .container {
   justify-content: space-evenly;
-  width: 30rem;
+  width: 35rem;
   color: #fff;
+  .btn-home {
+    position: relative;
+    width: 100%;
+    .icon-home {
+      position: absolute;
+      right: 0;
+      color: #fff;
+      height: 2rem;
+    }
+  }
   .title-question {
     width: 100%;
     text-align: center;
@@ -28,7 +38,6 @@
     gap: 1.2rem;
     padding: 0;
     .item-answer {
-      width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -50,6 +59,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        cursor: pointer;
         &:hover {
           color: $backgroundColor;
           .fa-circle {

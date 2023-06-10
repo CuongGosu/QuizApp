@@ -127,6 +127,11 @@
       margin-top: 3rem;
       cursor: pointer;
       padding: 1rem;
+      &:hover {
+        background-color: #ffcccc;
+        color: #26294b;
+        cursor: pointer;
+      }
     }
     .btn-play-again {
       background-color: yellow;
