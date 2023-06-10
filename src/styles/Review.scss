@@ -1,0 +1,141 @@
+@import '../styles/variables.scss';
+.container-review {
+  justify-content: space-evenly;
+  width: 30rem;
+  color: #fff;
+  .title-question {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    position: relative;
+    .number-question {
+      font-weight: 400;
+      position: absolute;
+      bottom: -3px;
+    }
+  }
+  .text-questions {
+    display: inline-block;
+    text-align: center;
+    height: 5rem;
+    font-size: 1.3rem;
+  }
+  .list-answer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1.2rem;
+    padding: 0;
+    .item-answer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.2rem;
+      border: 2px solid #fff;
+      border-radius: 30px;
+      padding: 0.5rem 1rem;
+      &:hover {
+        background-color: #fff9c4;
+        color: #26294b;
+        cursor: pointer;
+      }
+      button {
+        background-color: transparent;
+        width: 100%;
+        border: none;
+        color: #fff;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:hover {
+          color: $backgroundColor;
+          .fa-circle {
+            border: 2px solid $backgroundColor;
+            background-color: $backgroundColor;
+          }
+        }
+        .text-option {
+          display: inline-block;
+        }
+        .fa-circle {
+          display: inline-block;
+          color: $backgroundColor;
+          height: 2rem;
+          width: 2rem;
+          border-radius: 50%;
+          border: 2px solid #fff;
+          pointer-events: none;
+        }
+      }
+    }
+    .correct {
+      border: 2px solid green;
+      color: green;
+      font-weight: 500;
+      button {
+        .text-option {
+          color: green;
+        }
+        .fa-circle-check {
+          color: green;
+          height: 2rem;
+          width: 2rem;
+          border-radius: 50%;
+          background-color: #26294b;
+          border: 2px solid green;
+        }
+      }
+    }
+    .incorrect {
+      border: 2px solid red;
+      color: red;
+      font-weight: 500;
+      button {
+        .text-option {
+          color: red;
+        }
+        .fa-circle-Xmark {
+          color: red;
+          height: 2rem;
+          width: 2rem;
+          border-radius: 50%;
+          background-color: #26294b;
+          border: 2px solid red;
+        }
+      }
+    }
+  }
+
+  .listButton {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    .button {
+      width: calc(100% / 3);
+      background-color: red;
+      font-weight: 600;
+      color: #fff;
+      font-size: 1.3rem;
+      text-decoration: none;
+      border-radius: 20px;
+      border: none;
+      margin-top: 3rem;
+      cursor: pointer;
+      padding: 1rem;
+    }
+    .btn-play-again {
+      background-color: yellow;
+      color: #333;
+    }
+    .disabled {
+      background-color: #7e7e7e;
+      color: #fff;
+      pointer-events: none;
+    }
+  }
+}

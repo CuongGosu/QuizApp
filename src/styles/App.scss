@@ -1,0 +1,27 @@
+@import '../styles/variables.scss';
+.App {
+  background-color: $backgroundColor;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background-color: $backgroundColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .button {
+    background-color: red;
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 30px;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 3rem;
+    cursor: pointer;
+  }
+}
