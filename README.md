@@ -38,9 +38,9 @@ This project was developed using the following technologies:
 - Answer Validation: After selecting an answer, the app validates the selection and provides feedback indicating if the chosen answer is correct or incorrect.
 - Quiz Statistics:
 
-  "Total Time": The app records the time taken by the user to complete the quiz and displays it in a user-friendly format.
-  "Correct Answers": The number of correct answers provided by the user during the quiz is shown.
-  "Pass/Fail": A clear message indicates if the user passed or failed the quiz based on predefined passing criteria.
+  + "Total Time": The app records the time taken by the user to complete the quiz and displays it in a user-friendly format.
+  + "Correct Answers": The number of correct answers provided by the user during the quiz is shown.
+  + "Pass/Fail": A clear message indicates if the user passed or failed the quiz based on predefined passing criteria.
 
 - Review Answers: After completing the quiz, users have the option to review their answers. They can see the correct answers for the questions they answered incorrectly.
 - Replay: Once the quiz is completed, users can choose to replay the quiz the app.
