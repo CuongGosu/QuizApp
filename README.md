@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Project Introduction:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React.js quiz application that allows users to test their knowledge by answering a series of questions. The app provides interactive features and displays statistics at the end of the quiz.
 
-## Available Scripts
+## IMAGE DEMO WEBSITE:
 
-In the project directory, you can run:
+#### Giao diện chính của trang web trên thiết bị pc,laptop
 
-### `npm start`
+![Giao diện chính của trang web trên thiết bị pc,laptop](./src/imgs/trangchu.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### DEMO WEBSITE:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Giao diện của trang web](./src/imgs/demo1.png)
+![Giao diện của trang web](./src/imgs/demo-true-answer.png)
+![Giao diện của trang web](./src/imgs/demo-false-answer.png)
+![Giao diện của trang web](./src/imgs/demo2.png)
+![Giao diện của trang web](./src/imgs/demo-result-bad.png)
+![Giao diện của trang web](./src/imgs/demo-result-good.png)
+![Giao diện của trang web](./src/imgs/demo-review.png)
+![Giao diện của trang web](./src/imgs/demo-review-2.png)
 
-### `npm test`
+## LINK DEMO WEBSITE:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A demo of the website can be found at the following link: https://glasses-git-main-cuonggosu.vercel.app/
 
-### `npm run build`
+## Technologies in use:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project was developed using the following technologies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- HTML
+- CSS
+- JavaScript
+- Swiperjs
+- Leaflet
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## FEATURE:
 
-### `npm run eject`
+#### The website includes the following features:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- The website also supports rendering products from a RESTful API (https://glasses-67sp43rtm-cuonggosu.vercel.app/db.json)
+- Responsive design to ensure optimal display on different devices
+- Detailed product view for each item
+- Categorization of products into different groups based on their status, including hot, sale, and new items
+- Display features(sort,grid,type,...) products
+- SignIn, SignUp with firebase (Authentication)
+- CRUD cart with firestore
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To install this project, simply clone the GitHub repository:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+git clone https://github.com/CuongGosu/BookStore.git
