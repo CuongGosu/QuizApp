@@ -21,32 +21,32 @@ This is a React.js quiz application that allows users to test their knowledge by
 
 ## LINK DEMO WEBSITE:
 
-A demo of the website can be found at the following link: https://glasses-git-main-cuonggosu.vercel.app/
+A demo of the website can be found at the following link: https://quiz-app-cuonggosu.vercel.app
 
 ## Technologies in use:
 
 This project was developed using the following technologies:
 
-- HTML
-- CSS
-- JavaScript
-- Swiperjs
-- Leaflet
+- SCSS
+- REACTJS
 
 ## FEATURE:
 
 #### The website includes the following features:
 
-- The website also supports rendering products from a RESTful API (https://glasses-67sp43rtm-cuonggosu.vercel.app/db.json)
-- Responsive design to ensure optimal display on different devices
-- Detailed product view for each item
-- Categorization of products into different groups based on their status, including hot, sale, and new items
-- Display features(sort,grid,type,...) products
-- SignIn, SignUp with firebase (Authentication)
-- CRUD cart with firestore
+- The website also supports rendering products from an API (https://opentdb.com/api.php?amount=5)
+- Answer Validation: After selecting an answer, the app validates the selection and provides feedback indicating if the chosen answer is correct or incorrect.
+- Quiz Statistics:
+
+* Total Time: The app records the time taken by the user to complete the quiz and displays it in a user-friendly format.
+* Correct Answers: The number of correct answers provided by the user during the quiz is shown.
+* Pass/Fail: A clear message indicates if the user passed or failed the quiz based on predefined passing criteria.
+
+- Review Answers: After completing the quiz, users have the option to review their answers. They can see the correct answers for the questions they answered incorrectly.
+- Replay: Once the quiz is completed, users can choose to replay the quiz the app.
 
 ## Installation:
 
 To install this project, simply clone the GitHub repository:
 
-git clone https://github.com/CuongGosu/BookStore.git
+git clone https://github.com/CuongGosu/QuizApp.git
